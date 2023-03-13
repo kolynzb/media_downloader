@@ -14,5 +14,7 @@ python main.py
 
 ## Features built-in
 
-- [] youtube video download
-- [] youtube audio download
+- [ ] youtube video download
+- [ ] youtube audio download
+- [ ] cropped youtube video download
+- [ ] cropped youtube audio download
