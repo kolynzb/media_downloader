@@ -4,14 +4,19 @@ import sqlite3
 import os
 
 def save_to_history(title, file_name):
-    # Save the downloaded file to the history in the database
+    """
+    Save the downloaded file to the history in the database
+    """
     download_date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     c.execute('INSERT INTO downloaded_files (title, file_name, download_date) VALUES (?, ?, ?)',
               (title, file_name, download_date))
     conn.commit()
 
 def get_history():
-    # Retrieve all downloaded files from the database
+    """
+    Retrieve all downloaded files from the database
+    """
+
     c.execute('SELECT * FROM downloaded_files')
     rows = c.fetchall()
 
@@ -24,6 +29,10 @@ def get_history():
     return downloaded_files
 
 def clear_history():
+    """
+    Delete All downloads from history
+    """
+
     # Connect to the downloads database
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     db_path = os.path.join(project_root, 'downloads.db')
@@ -40,6 +49,10 @@ def clear_history():
 
 
 def delete_from_history(file_name):
+    """
+    Delete downloaded File From History
+    """
+    
     # Connect to the downloads database
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     db_path = os.path.join(project_root, 'downloads.db')
