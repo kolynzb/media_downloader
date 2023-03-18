@@ -2,19 +2,35 @@
 
 - Media downloader(files of any format) for platforms like youtube ,vimeo.
 
-- [project setup and installation](./docs/installation.md)
+> ⚠️ __DISCLAIMER__: Project Still under construction
 
-- To run
+- [Project setup and Installation](./docs/installation.md)
+
+- To run application after project setup ☝🏿
 
 ```bash
 python main.py
 ```
 
-- [Useful links i used in project ](./tut.mdtut.md)
+or
+
+```
+./run_app.sh
+```
+
+- [Useful links I Used in project ](./tut.md)
 
 ## Features built-in
 
-- [ ] youtube video download
-- [ ] youtube audio download
-- [ ] cropped youtube video download
-- [ ] cropped youtube audio download
+- [ ] youtube video download.
+- [ ] youtube audio download.
+- [ ] cropped youtube video download.
+- [ ] cropped youtube audio download.
+- [ ] youtube playlist download.
+- [ ] youtube audio playlist download.
+- [ ] Save Download history. (_save, clear and delete_)
+- [ ] Interactive GUI.
+
+# Development
+
+- [Project Folder structure](./docs/folder-structure.md)
