@@ -1,6 +1,6 @@
 # Installation Instructions
 
-- Create virtual environment
+- Create virtual environment (_You can use any of your choice in this example i use venv_).
 
 ```bash
 python -m venv <environment_name>
@@ -21,6 +21,6 @@ source <environment_name>/bin/activate
 pip install -r requirements.txt
 ```
 
-- Project Installation Complete
+- Project Installation Complete 🍾
 
-- Run Application with `python main.py`
+- Run Application with `python main.py` or you can [run the bash script](./using-run_app-script.md)
