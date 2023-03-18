@@ -1,6 +1,9 @@
 import youtube_dl
 
 def download_subtitles(url, lang_code='en'):
+    """
+    Download Video Subtitles
+    """
     # Create a YouTubeDL instance
     ydl = youtube_dl.YoutubeDL()
 

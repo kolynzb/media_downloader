@@ -18,6 +18,7 @@ def download_audio1(yt_url, output_path):
         file_name = ydl.prepare_filename(info_dict)
     history_service.save_to_history(title, file_name)
 
+
 def download_audio(yt_url):
     ydl_opts = {
         'format': 'bestaudio/best',

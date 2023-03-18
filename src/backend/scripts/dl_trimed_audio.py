@@ -3,8 +3,10 @@ import youtube_dl
 from pydub import AudioSegment
 from datetime import datetime, timedelta
 
-# Define the function to download and trim the audio
 def download_and_trim(yt_url, start_time, end_time):
+    """
+     download and trim the audio 
+    """
     # Convert the start and end times to milliseconds
     start_time = datetime.strptime(start_time, '%H:%M:%S')
     end_time = datetime.strptime(end_time, '%H:%M:%S')

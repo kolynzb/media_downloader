@@ -1,9 +1,11 @@
 import youtube_dl 
 import history_service
 
-# Define the function to download audio files from a playlist
 def download_audio_playlist(playlist_url):
-    # Set up the options for youtube_dl
+    """
+    Download 🙃audio files from a playlist   
+    """
+
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': '%(title)s.%(ext)s',

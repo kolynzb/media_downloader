@@ -1,7 +1,10 @@
 import youtube_dl
 
-# Define the function to download videos from a playlist
 def download_playlist(playlist_url):
+    """
+    Download videos from a playlist   
+    """
+    
     # Set up the options for youtube_dl
     ydl_opts = {
         'format': 'bestvideo+bestaudio/best',
