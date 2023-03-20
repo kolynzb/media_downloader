@@ -1,6 +1,6 @@
-from src import gui
 
+"""
 
-
-
-gui.run_gui()
+@author: kolynzb
+"""
+from src.gui.app import main
