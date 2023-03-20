@@ -1,6 +1,7 @@
 # media_downloader
 
-- Media downloader(files of any format) for platforms like youtube ,vimeo.
+- Media downloader downloads files in your preferred format from platforms like youtube ,vimeo.
+- This project was created to help me learn how to use [flet](https://flet.dev/docs/)
 
   ![](./src/gui/assets/images/icon.png)
 
