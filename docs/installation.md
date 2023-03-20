@@ -23,4 +23,4 @@ pip install -r requirements.txt
 
 - Project Installation Complete 🍾
 
-- Run Application with `python main.py` or you can [run the bash script](./using-run_app-script.md)
+- Run Application with `python ,./src/main.py` or you can [run the bash script](./using-run_app-script.md)

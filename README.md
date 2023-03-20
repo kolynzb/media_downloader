@@ -3,7 +3,7 @@
 - Media downloader helps you download files in your preferred format from platforms like youtube ,vimeo.
 - This project was created to help me learn how to use [flet](https://flet.dev/docs/) and get started with simple python automation scripts 🦾.
 
-  ![](./src/gui/assets/images/icon.png)
+  ![Logo](./src/gui/assets/images/icon.png)
 
 > ⚠️ **DISCLAIMER**: Project Still under construction
 
@@ -38,7 +38,6 @@
   ```
 
 - [Useful links, ariticles & resources used in the making of this project ](./tut.md)
-
 - [Project Folder structure](./docs/folder-structure.md)
 - [Using bash & batch scripts to run project](./docs/using-run_app-script.md)
 
