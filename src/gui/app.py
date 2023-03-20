@@ -9,19 +9,17 @@ def main(page: ft.Page):
     page.window_height=700
     page.bgcolor="#000"
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
-    def sample():
-        pass
 
     welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM)
     btm_btn= ft.IconButton(icon=ft.icons.HISTORY,tooltip="Download History")
     opt_row=ft.Row(controls=[
-buttons.OptBtn(btn_name="Video"),
-buttons.OptBtn(btn_name="Audio"),
-buttons.OptBtn(btn_name="Video Playlist"),
-buttons.OptBtn(btn_name="Subtitle"),
-buttons.OptBtn(btn_name="Audio Playlist"),
-buttons.OptBtn(btn_name="Trimmed Audio"),
-buttons.OptBtn(btn_name="Trimmed Video"),
+        buttons.OptBtn(btn_name="Video"),
+        buttons.OptBtn(btn_name="Audio"),
+        buttons.OptBtn(btn_name="Video Playlist"),
+        buttons.OptBtn(btn_name="Subtitle"),
+        buttons.OptBtn(btn_name="Audio Playlist"),
+        buttons.OptBtn(btn_name="Trimmed Audio"),
+        buttons.OptBtn(btn_name="Trimmed Video"),
     ],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,vertical_alignment=ft.CrossAxisAlignment.CENTER,wrap=True,width=500)
 
 
