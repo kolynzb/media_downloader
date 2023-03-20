@@ -11,7 +11,7 @@ def main(page: ft.Page):
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
     welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM)
-    btm_btn= ft.IconButton(icon=ft.icons.HISTORY,tooltip="Download History")
+ 
     opt_row=ft.Row(controls=[
         buttons.OptBtn(btn_name="Video"),
         buttons.OptBtn(btn_name="Audio"),
@@ -23,7 +23,11 @@ def main(page: ft.Page):
     ],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,vertical_alignment=ft.CrossAxisAlignment.CENTER,wrap=True,width=500)
 
 
-    btn_row=ft.Row(controls=[btm_btn,btm_btn],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,width=100)
+    btn_row=ft.Row(controls=[
+        ft.IconButton(icon=ft.icons.HISTORY,tooltip="Download History"),
+        ft.IconButton(icon=ft.icons.SETTINGS,tooltip="Settings"),
+        ft.IconButton(icon=ft.icons.CODE,tooltip="Github Link"),
+    ],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,width=100)
     page.add(
         ft.Container(
         content = ft.Column(
@@ -31,7 +35,8 @@ def main(page: ft.Page):
             # TODO: Figure Out Image
             ft.Image(src=f"/assets/images/icon.png",        width=100,
                 height=100,
-                fit=ft.ImageFit.CONTAIN,),
+                fit=ft.ImageFit.CONTAIN,
+            ),
             welc_text,
             # Options
             ft.Row(
