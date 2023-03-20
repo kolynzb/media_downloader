@@ -1,7 +1,7 @@
 # media_downloader
 
 - Media downloader downloads files in your preferred format from platforms like youtube ,vimeo.
-- This project was created to help me learn how to use [flet](https://flet.dev/docs/)
+- This project was created to help me learn how to use [flet](https://flet.dev/docs/) and python automation 
 
   ![](./src/gui/assets/images/icon.png)
 
