@@ -4,4 +4,4 @@
 cd "$(dirname "$0")"
 
 # Run main.py
-python main.py
+python ./src/main.py
