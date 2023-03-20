@@ -2,23 +2,28 @@
 
 - Media downloader(files of any format) for platforms like youtube ,vimeo.
 
+  ![](./src/gui/assets/images/icon.png)
+
 > ⚠️ **DISCLAIMER**: Project Still under construction
 
-- [Project setup and Installation](./docs/installation.md)
+- [Project setup and Installation Instructions](./docs/installation.md)
 
-- To run application after project setup ☝🏿
+- Commands to run application after project setup ;
 
-```bash
-python main.py
-```
+  ```bash
+  python ./src/main.py
+  ```
 
-or
+  or
 
-```
-./run_app.sh
-```
+  ```bash
+  # On Linux or Mac
+  ./run_app.sh
+  # On Windows
+  ./run_app_wn.bat
+  ```
 
-- [Useful links I Used in project ](./tut.md)
+- [Useful links, ariticles & resources used in the making of this project ](./tut.md)
 
 ## Features built-in
 
@@ -29,11 +34,12 @@ or
 - [ ] youtube playlist download 📃.
 - [ ] youtube audio playlist download 🎶.
 - [ ] Save Download history ⬇️. (_save, clear and delete_)
-- [ ] Interactive GUI _powered by flet_ 🐤.
+- [x] Interactive GUI _powered by flet_ 🐤.
 
-# Development
+## Useful for development
 
 - [Project Folder structure](./docs/folder-structure.md)
+- [Using bash scripts](./docs/using-run_app-script.md)
 
 ## Packages used
 
