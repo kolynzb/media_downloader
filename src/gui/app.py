@@ -1,19 +1,62 @@
 import flet as ft
 
+from gui.widgets import buttons
+
+
 def main(page: ft.Page):
     page.title = "Media Downloader"
     page.window_width=1000
-    page.window_height=600
+    page.window_height=700
     page.bgcolor="#000"
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
-    # page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
-    welc_text = ft.TextField(value="Welcome To Media Download",text_style=ft.TextStyle(20))
-    opt_btn= ft.TextButton(text="Youtube Download")
-    btm_btn= ft.IconButton(icon=ft.icons.HISTORY)
-    btn_row=ft.Row(controls=[opt_btn,btm_btn],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,width=500)
+    def sample():
+        pass
+
+    welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM)
+    btm_btn= ft.IconButton(icon=ft.icons.HISTORY,tooltip="Download History")
+    opt_row=ft.Row(controls=[
+buttons.OptBtn(btn_name="Video"),
+buttons.OptBtn(btn_name="Audio"),
+buttons.OptBtn(btn_name="Video Playlist"),
+buttons.OptBtn(btn_name="Subtitle"),
+buttons.OptBtn(btn_name="Audio Playlist"),
+buttons.OptBtn(btn_name="Trimmed Audio"),
+buttons.OptBtn(btn_name="Trimmed Video"),
+    ],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,vertical_alignment=ft.CrossAxisAlignment.CENTER,wrap=True,width=500)
+
+
+    btn_row=ft.Row(controls=[btm_btn,btm_btn],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,width=100)
     page.add(
-        welc_text,
-        btn_row,
+        ft.Container(
+        content = ft.Column(
+        controls=[
+            # TODO: Figure Out Image
+            ft.Image(src=f"/assets/images/icon.png",        width=100,
+                height=100,
+                fit=ft.ImageFit.CONTAIN,),
+            welc_text,
+            # Options
+            ft.Row(
+            controls=[
+                    ft.Divider(height=1,thickness=1, color="white"),
+                    ft.Text(value="Click Preferred Option Below",style=ft.TextThemeStyle.LABEL_MEDIUM),
+                    ft.Divider(height=1,thickness=1, color="white"),
+            ],
+            alignment= ft.MainAxisAlignment.CENTER,
+            ),
+            opt_row,
+            btn_row
+            ],
+            alignment=ft.MainAxisAlignment.CENTER,
+            horizontal_alignment= ft.CrossAxisAlignment.CENTER,
+        ),
+    expand=True,
+    margin=0,
+    gradient=ft.LinearGradient(colors=["#CF0B21","#b55464"]),
+    width=2000,
+    height=2000,
+    padding=0,
+        ),
     )
 
 ft.app(target=main)
