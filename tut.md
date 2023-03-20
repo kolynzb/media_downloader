@@ -13,12 +13,14 @@
 
 # Things to consider
 
-- Consider using pyinstaller for installable executable file
+- Consider using pyinstaller for installable executable file.
 
   ```bash
   pip install pyinstaller
   pyinstaller ./src/main.py
   ```
 
-- For linux use pyoxidizer
+- For linux use pyoxidizer.
   `pyoxidizer build`
+
+- Consider Mkdocs for project documentation.
