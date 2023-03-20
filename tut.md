@@ -22,4 +22,6 @@
 
 - nclude this [logo](https://dribbble.com/shots/13869305-V-Down-Arrow-For-Video-Downloader-app-logo)
 - https://www.geeksforgeeks.org/pytube-python-library-download-youtube-videos/
+- [Flet Basics](https://www.youtube.com/watch?v=Tucr8Ta-kq4&t=1638s)
 - [flet reusability](https://youtu.be/vnb4Kiaz5tE)
+- [Flet Examples]()
