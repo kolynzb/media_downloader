@@ -20,7 +20,7 @@ def main(page: ft.Page):
     page.theme = ft.Theme(font_family="mont")
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
-    welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM,font_family="mont",weight=ft.FontWeight.W_500)
+    welc_text = ft.Text(value="Welcome To Media Downloader",style=ft.TextThemeStyle.DISPLAY_MEDIUM,font_family="mont",weight=ft.FontWeight.W_500)
  
     opt_row=ft.Row(controls=[
         buttons.OptBtn(btn_name="Video"),
