@@ -1,3 +1,5 @@
+import math
+
 import flet as ft
 
 from gui.widgets import buttons
@@ -41,9 +43,11 @@ def main(page: ft.Page):
         content = ft.Column(
         controls=[
             # TODO: Figure Out Image
-            ft.Image(src=f"/images/icon.png",
-                width=100,
-                height=100,
+            ft.Image(
+                # src=f"/images/icon.png",
+                src="https://res.cloudinary.com/kolynz-b/image/upload/v1679497275/icon_gqdmib.png",
+                width=150,
+                height=150,
                 fit=ft.ImageFit.CONTAIN,
             ),
             welc_text,
@@ -64,17 +68,17 @@ def main(page: ft.Page):
         ),
     expand=True,
     margin=0,
-    gradient=ft.LinearGradient(colors=["#ff24030e","#ff22133c"],begin=ft.alignment.top_left, end=ft.Alignment(0.8, 1),),
+    gradient=ft.LinearGradient(colors=["#ff24030e","#ff22133c"],begin=ft.alignment.top_left, end=ft.Alignment(0.8, 1),tile_mode=ft.GradientTileMode.MIRROR,rotation=math.pi / 3,),
     width=2000,
     height=2000,
     padding=0,
         ),
     )
 
-ft.app(target=main, assets_dir="src/assets")
+ft.app(target=main, assets_dir="./assets")
 
 def run_gui():
-    ft.app(target=main, assets_dir="src/gui/assets")
+    ft.app(target=main, assets_dir="./assets")
 
 
 if __name__ == "__main__":
