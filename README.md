@@ -1,7 +1,7 @@
 # Media Downloader
 
 <center>
-<img src="./src/gui/assets/images/icon.png" alt="media downloader logo" width="200">
+<img src="./src/gui/assets/images/icon.png" alt="media downloader logo" width="200" align="center">
 </center>
 
 > ⚠️ **DISCLAIMER**: Project Still under construction
