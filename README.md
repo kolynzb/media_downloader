@@ -18,6 +18,10 @@
 - [ ] Save Download history ⬇️. (_save, clear and delete_)
 - [x] Interactive GUI _powered by flet_ 🐤.
 
+## Screenshots 😎
+
+![](./docs/images/home%20page.png)
+
 ## Get Started
 
 - [Project setup and Installation Instructions](./docs/installation.md)
