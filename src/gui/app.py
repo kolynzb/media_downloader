@@ -65,6 +65,7 @@ def main(page: ft.Page):
             ],
             alignment=ft.MainAxisAlignment.CENTER,
             horizontal_alignment= ft.CrossAxisAlignment.CENTER,
+            spacing=30,
         ),
     expand=True,
     margin=0,
