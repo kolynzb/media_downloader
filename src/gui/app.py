@@ -18,7 +18,7 @@ def main(page: ft.Page):
     page.theme = ft.Theme(font_family="mont")
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
-    welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM,font_family="mont")
+    welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM,font_family="mont",weight=ft.FontWeight.W_500)
  
     opt_row=ft.Row(controls=[
         buttons.OptBtn(btn_name="Video"),
@@ -41,7 +41,8 @@ def main(page: ft.Page):
         content = ft.Column(
         controls=[
             # TODO: Figure Out Image
-            ft.Image(src=f"/images/icon.png",        width=100,
+            ft.Image(src=f"/images/icon.png",
+                width=100,
                 height=100,
                 fit=ft.ImageFit.CONTAIN,
             ),
@@ -63,17 +64,17 @@ def main(page: ft.Page):
         ),
     expand=True,
     margin=0,
-    gradient=ft.LinearGradient(colors=["#CF0B21","#b55464"]),
+    gradient=ft.LinearGradient(colors=["#ff24030e","#ff22133c"],begin=ft.alignment.top_left, end=ft.Alignment(0.8, 1),),
     width=2000,
     height=2000,
     padding=0,
         ),
     )
 
-ft.app(target=main, assets_dir="assets")
+ft.app(target=main, assets_dir="src/assets")
 
 def run_gui():
-    ft.app(target=main, assets_dir="assets")
+    ft.app(target=main, assets_dir="src/gui/assets")
 
 
 if __name__ == "__main__":
