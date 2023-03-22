@@ -8,9 +8,17 @@ def main(page: ft.Page):
     page.window_width=1000
     page.window_height=700
     page.bgcolor="#000"
+    page.padding = 0
+    page.fonts = {
+        "Kanit": "https://raw.githubusercontent.com/google/fonts/master/ofl/kanit/Kanit-Bold.ttf",
+        "Montserrat": "/fonts/Montserrat-wght.ttf",
+        "mont": "https://raw.githubusercontent.com/google/fonts/master/ofl/montserrat/Montserrat[wght].ttf"
+    }
+
+    page.theme = ft.Theme(font_family="mont")
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
-    welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM)
+    welc_text = ft.Text(value="Welcome To Media Download",style=ft.TextThemeStyle.DISPLAY_MEDIUM,font_family="mont")
  
     opt_row=ft.Row(controls=[
         buttons.OptBtn(btn_name="Video"),
@@ -33,7 +41,7 @@ def main(page: ft.Page):
         content = ft.Column(
         controls=[
             # TODO: Figure Out Image
-            ft.Image(src=f"/assets/images/icon.png",        width=100,
+            ft.Image(src=f"/images/icon.png",        width=100,
                 height=100,
                 fit=ft.ImageFit.CONTAIN,
             ),
@@ -42,7 +50,7 @@ def main(page: ft.Page):
             ft.Row(
             controls=[
                     ft.Divider(height=1,thickness=1, color="white"),
-                    ft.Text(value="Click Preferred Option Below",style=ft.TextThemeStyle.LABEL_MEDIUM),
+                    ft.Text(value="Click Preferred Option Below",style=ft.TextThemeStyle.LABEL_MEDIUM,font_family="Mont"),
                     ft.Divider(height=1,thickness=1, color="white"),
             ],
             alignment= ft.MainAxisAlignment.CENTER,
@@ -62,10 +70,10 @@ def main(page: ft.Page):
         ),
     )
 
-ft.app(target=main)
+ft.app(target=main, assets_dir="assets")
 
 def run_gui():
-    ft.app(target=main)
+    ft.app(target=main, assets_dir="assets")
 
 
 if __name__ == "__main__":
