@@ -20,11 +20,13 @@ class OptBtn(ft.UserControl):
             ),
             tooltip=f"Download {self.btn_name}",
             style=ft.ButtonStyle(
-            color={
-                ft.MaterialState.HOVERED: ft.colors.WHITE,
-                ft.MaterialState.FOCUSED: ft.colors.BLUE,
-                ft.MaterialState.DEFAULT: ft.colors.BLACK,
-            }
+            bgcolor={
+                ft.MaterialState.HOVERED: ft.colors.PURPLE_800,
+                ft.MaterialState.FOCUSED: ft.colors.PURPLE_800,
+                ft.MaterialState.DEFAULT: ft.colors.TRANSPARENT,
+            },
+            # elevation={"pressed": 0, "": 1},
+            animation_duration=500,
             )
         )
 
