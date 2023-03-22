@@ -10,6 +10,12 @@
 - [Flet Basics](https://www.youtube.com/watch?v=Tucr8Ta-kq4&t=1638s)
 - [flet reusability](https://youtu.be/vnb4Kiaz5tE)
 - [Flet Examples respository]()
+- [Link to montserat font](https://github.com/google/fonts/blob/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf)
+
+- [Flutter gradient genrator](https://fluttergradientgenerator.com/)
+- [animations with buttons](https://youtu.be/7Qzjn-BWXAc)
+
+- [Routing and navigation with flet](https://youtu.be/1at0ZZF24Hs)
 
 # Things to consider
 
