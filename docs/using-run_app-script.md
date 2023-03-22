@@ -17,3 +17,8 @@
   ```bash
   ./run_app_wn.bat
   ```
+
+## Running application with hot reload (Option 3 - for development)
+
+- Run
+  `flet -r ./src/main.py`
