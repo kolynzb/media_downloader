@@ -1,11 +1,13 @@
-# media_downloader
+# Media Downloader
+
+<center>
+<img src="./src/gui/assets/images/icon.png" alt="media downloader logo" width="200">
+</center>
+
+> ⚠️ **DISCLAIMER**: Project Still under construction
 
 - Media downloader helps you download files in your preferred format from platforms like youtube ,vimeo.
 - This project was created to help me learn how to use [flet](https://flet.dev/docs/) and get started with simple python automation scripts 🦾.
-
-  ![Logo](./src/gui/assets/images/icon.png)
-
-> ⚠️ **DISCLAIMER**: Project Still under construction
 
 ## Features built-in
 
