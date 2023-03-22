@@ -29,7 +29,7 @@ def main(page: ft.Page):
 
 
     page.on_route_change = route_change
-    page.go('/videodl')
+    page.go('/')
 
 def run_gui():
     return ft.app(target=main, assets_dir="./assets")
