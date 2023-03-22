@@ -25,8 +25,7 @@ class OptBtn(ft.UserControl):
                 ft.MaterialState.FOCUSED: ft.colors.PURPLE_800,
                 ft.MaterialState.DEFAULT: ft.colors.TRANSPARENT,
             },
-            # elevation={"pressed": 0, "": 1},
-            animation_duration=500,
+            animation_duration=600,
             )
         )
 
